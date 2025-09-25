@@ -32,6 +32,11 @@
 ![Блок-схема алгоритма](lab_3_schema.png)
 ## 2. Реализация программы
 ```
+#include <stdio.h>
+#include <locale.h>
+
+
+
 int main() 
 {
     setlocale(LC_CTYPE, "RUS");
@@ -64,6 +69,7 @@ int main()
     months = (total_days % 365) / 30;
     days = (total_days % 365) % 30;
 
+    puts("Написать и отладить программу вычисления возраста по дате рождения");
     puts("___________________________________");
     printf("Дата рождения: %02d.%02d.%d\n", your_age_day, your_age_month, your_age_year);
     printf("Текущая дата:  %02d.%02d.%d\n", current_day, current_month, current_year);
